@@ -1,0 +1,112 @@
+*{box-sizing: border-box;}
+body{
+    font-family: 'Taviraj', serif;
+    
+}
+.container{
+    width: 1030px;
+    margin: 0 auto;
+   
+}
+%style-menu-header{
+    color:#256e2b;
+    font-size: 15px;
+    list-style-type: none;
+    font-weight: 400;
+    cursor: pointer;
+    padding-top: 3px;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+ 
+    .row{
+        display: flex;
+        justify-content: space-between;
+        .col-2{
+
+            img{
+                height:60px;
+            }
+            
+        }
+        .col-6{
+            display: grid;
+            grid-template-columns: 70px 70px 80px 90px 70px 70px;
+            text-align: center;
+            grid-column-gap: 35px;
+            padding: 20px ; 
+            font-family: 'Poppins', sans-serif;
+            
+            .header-menu-home{
+                color: #7bb157;
+            }
+
+            li{
+                
+                @extend %style-menu-header
+                
+            }
+            li:hover{
+                color: #7bb157;
+                transition: 500ms;
+            }
+        }
+    }
+}
+.main-logo-img{
+
+    background-image: url(images/ez.jpg);
+    height: 800px;
+
+    .logo-img-text{
+        font-size: 63px;
+        color: white;
+        padding-top: 200px;
+        line-height: 70px;
+        width: 600px;
+        font-weight: 600;
+        margin-bottom: 100px;
+    }
+    .logo-img-button{
+        height: 50px;
+        width: 250px;
+        button{
+            background-color: #89c461;
+            color: white;
+            font-weight: 600;
+            font-size: 17px;
+            height: 100%;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+           
+            
+        }
+        button:hover{
+            background-color: #66ff00   ;
+        }
+    }
+    .logo-img-contacts{
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        font-size: 14px;
+        margin-top: 50px;
+        color: white;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+
+        .view-more-details{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #89c461 ;
+        }
+        .Contact-us{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #89c461 ;
+        }
+    }
+
+}
