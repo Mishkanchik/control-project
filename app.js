@@ -7,4 +7,4 @@ likes.forEach((btn) => {
   });
 });
 
-$(".slider").slick({ arrows: false, dots: true });
+$(".slider").slick({ arrows: false, dots: true, autoplay: true });
