@@ -4,6 +4,7 @@
 
 body {
   font-family: "Taviraj", serif;
+  z-index: -1;
 }
 
 .container {
@@ -11,7 +12,12 @@ body {
   margin: 0 auto;
 }
 
-.header .row .col-6 li {
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header li {
   color: #256e2b;
   font-size: 15px;
   list-style-type: none;
@@ -20,30 +26,49 @@ body {
   padding-top: 3px;
 }
 
+.like {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  background-image: url(images/LikesBigTwo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.likes {
+  background-image: url(images/LikesBigOne.png);
+}
+
 .header {
   width: 100%;
   height: 60px;
   background-color: white;
+  position: fixed;
+  z-index: 5;
 }
-.header .row {
-  display: flex;
-  justify-content: space-between;
-}
-.header .row .col-2 img {
+.header .col-2 img {
   height: 60px;
 }
-.header .row .col-6 {
+.header .col-6 {
   display: grid;
-  grid-template-columns: 70px 70px 80px 90px 70px 70px;
+  grid-template-columns: 70px 80px 90px 70px 70px 70px 70px;
   text-align: center;
   grid-column-gap: 35px;
   padding: 20px;
   font-family: "Poppins", sans-serif;
 }
-.header .row .col-6 .header-menu-home {
+.header .header-menu-home {
   color: #7bb157;
 }
-.header .row .col-6 li:hover {
+.header .favorits {
+  color: #ff7b00;
+}
+.header .favorits:hover {
+  color: #00ff73;
+}
+.header li:hover {
   color: #7bb157;
   transition: 500ms;
 }
@@ -91,8 +116,269 @@ body {
 .main-logo-img .logo-img-contacts .view-more-details {
   padding-bottom: 10px;
   border-bottom: 1px solid #89c461;
+  cursor: pointer;
 }
 .main-logo-img .logo-img-contacts .Contact-us {
+  cursor: pointer;
   padding-bottom: 10px;
   border-bottom: 1px solid #89c461;
+}
+
+.see-our-natural {
+  background-image: url(images/clinic4-home-plants-bg.png);
+  height: 1200px;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.see-our-natural .see-our-natural-logo-text {
+  padding-top: 75px;
+  font-size: 40px;
+  color: #356938;
+  font-weight: 600;
+  margin-bottom: 65px;
+}
+.see-our-natural .see-our-natural-content {
+  display: flex;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.see-our-natural .see-our-natural-content .see-our-natural-block {
+  height: 426px;
+  cursor: pointer;
+  margin-right: 2.7%;
+  background-color: black;
+  position: relative;
+}
+.see-our-natural .see-our-natural-content .see-our-natural-block img {
+  opacity: 1;
+  height: 427px;
+  width: 325px;
+}
+.see-our-natural .see-our-natural-content .see-our-natural-block .see-our-natural-block-logo {
+  font-family: "Poppins", sans-serif;
+  color: #83be5b;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  z-index: 0;
+}
+.see-our-natural .see-our-natural-content .see-our-natural-block .see-our-natural-block-text {
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  transform: scaleY(0);
+  transform-origin: top;
+  color: #015708;
+  width: 90%;
+}
+.see-our-natural .see-our-natural-content .see-our-natural-block:hover .see-our-natural-block-text {
+  transform: scaleY(1);
+  transition: 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.see-our-natural .see-our-natural-content .see-our-natural-block:hover img {
+  opacity: 0.5;
+}
+.see-our-natural .see-our-natural-content .see-our-natural-button {
+  margin: 135px 95px 140px 100px;
+}
+.see-our-natural .see-our-natural-content .see-our-natural-button button {
+  height: 80px;
+  width: 105px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.see-our-natural .see-our-natural-content .see-our-natural-button button img {
+  margin-left: 17px;
+}
+.see-our-natural .see-our-natural-content .see-our-natural-button .see-our-natural-button-text {
+  font-size: 32px;
+  width: 100%;
+  color: #356938;
+  font-weight: 600;
+}
+
+.we-take-care {
+  width: 100%;
+}
+.we-take-care .we-take-care-img {
+  width: 50%;
+  background-image: url(images/we-take-care-img.jpg);
+  height: 703px;
+}
+.we-take-care .we-take-care-content {
+  background-image: url(images/we-take-care-content-bg.jpg);
+  width: 50%;
+  height: 703px;
+  padding: 40px 80px;
+}
+.we-take-care .we-take-care-content .we-take-care-logo {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+  width: 60%;
+  color: white;
+  margin-bottom: 35px;
+}
+.we-take-care .we-take-care-content .we-take-care-logo span {
+  margin-right: 38%;
+}
+.we-take-care .we-take-care-content .we-take-care-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: white;
+  width: 80%;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+.we-take-care .we-take-care-content .we-take-care-product {
+  height: 200px;
+  width: 560px;
+}
+.we-take-care .we-take-care-content .we-take-care-product .we-take-care-product-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.we-take-care .we-take-care-content .we-take-care-product .we-take-care-product-flex .we-take-care-product-el {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+.we-take-care .we-take-care-content .we-take-care-product .we-take-care-product-flex .we-take-care-product-el .we-take-care-product-el-img {
+  margin-right: 25px;
+}
+.we-take-care .we-take-care-content .we-take-care-product .we-take-care-product-flex .we-take-care-product-el .we-take-care-product-el-text {
+  padding-top: 3px;
+  color: white;
+  font-size: 21px;
+  line-height: 25px;
+}
+.we-take-care .we-take-care-content .we-take-care-product .we-take-care-product-flex .we-take-care-product-el .we-take-care-product-el-text span {
+  margin-right: 30px;
+}
+
+.lets-meet {
+  height: 655px;
+  background-color: #f0f5f1;
+}
+.lets-meet .lets-meet-content {
+  width: 50%;
+  margin-top: 100px;
+}
+.lets-meet .lets-meet-content .lets-meet-logo {
+  width: 50%;
+  color: #356938;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.lets-meet .lets-meet-content .lets-meet-text {
+  font-size: 14px;
+  line-height: 25px;
+  color: #356938;
+  width: 85%;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 60px;
+}
+.lets-meet .lets-meet-content .lets-meet-button {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.lets-meet .lets-meet-content .lets-meet-button a {
+  background-color: #e0e7e1;
+  color: #2d493a;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.lets-meet .lets-meet-content .lets-meet-button a:hover {
+  background-color: #cedbd5;
+}
+.lets-meet .lets-meet-img-in-content {
+  background-color: #2d493a;
+  height: 655px;
+  text-align: center;
+  width: 50%;
+}
+.lets-meet .lets-meet-img-in-content img {
+  height: 533px;
+  width: 515px;
+}
+.lets-meet .lets-meet-img-in-content .lets-meet-img-text {
+  padding-top: 30px;
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+.lets-meet .lets-meet-img-in-content .lets-meet-img-text p {
+  color: #89c461;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+
+.coment-slider {
+  height: 622px;
+  border-bottom: 1px solid #356938;
+  padding-top: 100px;
+}
+.coment-slider .slider {
+  width: 78%;
+  margin: 0 auto;
+}
+.coment-slider .slider .slider-content {
+  text-align: center;
+}
+.coment-slider .slider .slider-content img {
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 80px;
+}
+.coment-slider .slider .slider-content .slider-text {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+.coment-slider .slider .slider-content .slider-text span {
+  padding: 5px 0;
+  display: block;
+  border-bottom: 1px solid #b1b1b1;
+}
+.coment-slider .slider .slider-content .slider-symbol {
+  font-size: 53px;
+  color: #1f1f1f;
+  margin-bottom: 12px;
+}
+.coment-slider .slider .slider-content .slider-coment-name {
+  color: #356938;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.coment-slider .slider .slider-content .slider-spesific {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #575757;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.coment-slider .slider .slick-dots li button:before {
+  font-size: 13px;
+}
+.coment-slider .slider .slick-dots li button:before {
+  color: #8f8f8f;
+}
+.coment-slider .slider .slick-dots li.slick-active button:before {
+  color: #89c461;
 }/*# sourceMappingURL=style.css.map */
