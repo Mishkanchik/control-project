@@ -13,7 +13,41 @@ body{
     justify-content: space-between;
 }
 
+%footer-content-a{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #00ff73;
+    text-decoration: none;
+}
+%social-content-style{
+    height: 28px;
+    width: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-right: 6px
 
+}
+.shortcut-links-content{
+    width: 120px;
+    a{
+        @extend %footer-content-a;
+      }
+      a:hover{
+          text-decoration:underline;
+      }
+}
+
+.footer-column{
+    width: 243px;
+}
+.footer-logo{
+    font-size: 21px;    
+    line-height: 25px;
+    font-weight: 600;
+    margin-bottom: 40px;   
+}
 
 
 
@@ -408,7 +442,7 @@ body{
 }
 
 .coment-slider{
-    height: 622px;
+    height: 670px;
     border-bottom: 1px solid #356938 ;
     
     padding-top: 100px;
@@ -463,6 +497,157 @@ body{
         }
         .slick-dots li.slick-active button:before{
             color: #89c461;
+        }
+    }
+}
+
+
+.contact-and-ask-about-more-details-content{
+
+    width: 910px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    .contact-and-ask-about-more-details-content-logo{
+
+        color: #356938;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+
+    }
+
+    .contact-and-ask-about-more-details-content-button{
+        height: 45px;
+        text-align: center;
+        button{
+            background-color: #89c461;
+            color: #ffffff;
+            height: 100%;
+            width: 150px;
+            font-size: inherit;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #7cb854;
+        }
+    }
+
+
+}
+
+.footer-content{
+    padding: 50px 0 200px;
+    height: 635px;
+
+
+    .localization{
+        padding-right: 30px;
+        margin-top: 30px;
+        color: black;
+
+       li{
+           list-style-type: none;
+           margin-bottom: 10px;
+           font-size: 14px;
+           font-family: 'Poppins', sans-serif;
+       }
+    }
+    .shortcut-links{
+        margin-top: 30px;
+    }
+
+    .shortcut-links-contents{
+        margin-top: 95px;
+    }
+
+    .contact-with-us{
+        margin-top: 30px;
+
+
+        .contact-with-us-text{
+            font-size: 15px;
+            line-height: 20px;
+            color: black;
+            width: 200px;
+            margin-bottom: 40px;
+        }
+        a{
+            @extend %footer-content-a;
+
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+
+    
+}
+.footer-last-content{
+    height: 84px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    .footer-2021{
+       font-size: 13px;
+       padding-top: 10px;
+            a{
+                @extend %footer-content-a;
+                display:inline-block;
+    
+            }
+            a:hover{
+                text-decoration:underline;
+            }
+        
+    }
+    .social{
+        display: flex;
+        .facebook{
+          @extend  %social-content-style;
+          background-image: url(images/facebook1.png);
+         
+          
+          
+        }
+        .facebook:hover{
+            background-image: url(images/facebook2.png);
+            transition: 600ms;
+        }
+        .twitter{
+            @extend  %social-content-style;
+            background-image: url(images/твиттер1.png);
+           
+        }
+        .twitter:hover{
+            background-image: url(images/твиттер2.png);
+            transition: 600ms;
+        }
+        .pinterest{
+
+            @extend  %social-content-style;
+            background-image: url(images/pinterest1.png);
+           
+        }
+        .pinterest:hover{
+            background-image: url(images/pinterest2.png);
+            transition: 600ms;
+        }
+        .instagram{
+            @extend  %social-content-style;
+            background-image: url(images/instagram1.png);
+            margin-right: 0;
+            
+        }
+        .instagram:hover{
+            background-image: url(images/instagram2.png);
+            transition: 600ms;
         }
     }
 }

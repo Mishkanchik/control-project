@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -15,6 +16,41 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-last-content .footer-2021 a, .footer-content .contact-with-us a, .shortcut-links-content a {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #00ff73;
+  text-decoration: none;
+}
+
+.footer-last-content .social .instagram, .footer-last-content .social .pinterest, .footer-last-content .social .twitter, .footer-last-content .social .facebook {
+  height: 28px;
+  width: 28px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.shortcut-links-content {
+  width: 120px;
+}
+.shortcut-links-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-column {
+  width: 243px;
+}
+
+.footer-logo {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
 
 .header li {
@@ -300,7 +336,7 @@ body {
   padding: 10px 20px;
 }
 .lets-meet .lets-meet-content .lets-meet-button a:hover {
-  background-color: #cedbd5;
+  background-color: #cddfd7;
 }
 .lets-meet .lets-meet-img-in-content {
   background-color: #2d493a;
@@ -327,7 +363,7 @@ body {
 }
 
 .coment-slider {
-  height: 622px;
+  height: 670px;
   border-bottom: 1px solid #356938;
   padding-top: 100px;
 }
@@ -381,4 +417,120 @@ body {
 }
 .coment-slider .slider .slick-dots li.slick-active button:before {
   color: #89c461;
+}
+
+.contact-and-ask-about-more-details-content {
+  width: 910px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-and-ask-about-more-details-content .contact-and-ask-about-more-details-content-logo {
+  color: #356938;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+.contact-and-ask-about-more-details-content .contact-and-ask-about-more-details-content-button {
+  height: 45px;
+  text-align: center;
+}
+.contact-and-ask-about-more-details-content .contact-and-ask-about-more-details-content-button button {
+  background-color: #89c461;
+  color: #ffffff;
+  height: 100%;
+  width: 150px;
+  font-size: inherit;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.contact-and-ask-about-more-details-content .contact-and-ask-about-more-details-content-button button:hover {
+  background-color: #7cb854;
+}
+
+.footer-content {
+  padding: 50px 0 200px;
+  height: 635px;
+}
+.footer-content .localization {
+  padding-right: 30px;
+  margin-top: 30px;
+  color: black;
+}
+.footer-content .localization li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+.footer-content .shortcut-links {
+  margin-top: 30px;
+}
+.footer-content .shortcut-links-contents {
+  margin-top: 95px;
+}
+.footer-content .contact-with-us {
+  margin-top: 30px;
+}
+.footer-content .contact-with-us .contact-with-us-text {
+  font-size: 15px;
+  line-height: 20px;
+  color: black;
+  width: 200px;
+  margin-bottom: 40px;
+}
+.footer-content .contact-with-us a:hover {
+  text-decoration: underline;
+}
+
+.footer-last-content {
+  height: 84px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.footer-last-content .footer-2021 {
+  font-size: 13px;
+  padding-top: 10px;
+}
+.footer-last-content .footer-2021 a {
+  display: inline-block;
+}
+.footer-last-content .footer-2021 a:hover {
+  text-decoration: underline;
+}
+.footer-last-content .social {
+  display: flex;
+}
+.footer-last-content .social .facebook {
+  background-image: url(images/facebook1.png);
+}
+.footer-last-content .social .facebook:hover {
+  background-image: url(images/facebook2.png);
+  transition: 600ms;
+}
+.footer-last-content .social .twitter {
+  background-image: url(images/твиттер1.png);
+}
+.footer-last-content .social .twitter:hover {
+  background-image: url(images/твиттер2.png);
+  transition: 600ms;
+}
+.footer-last-content .social .pinterest {
+  background-image: url(images/pinterest1.png);
+}
+.footer-last-content .social .pinterest:hover {
+  background-image: url(images/pinterest2.png);
+  transition: 600ms;
+}
+.footer-last-content .social .instagram {
+  background-image: url(images/instagram1.png);
+  margin-right: 0;
+}
+.footer-last-content .social .instagram:hover {
+  background-image: url(images/instagram2.png);
+  transition: 600ms;
 }/*# sourceMappingURL=style.css.map */
